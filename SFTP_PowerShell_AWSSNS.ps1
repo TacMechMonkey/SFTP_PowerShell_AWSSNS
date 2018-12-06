@@ -8,9 +8,11 @@
 # 5. Moves the file into a different directory
 # 6. Sends an AWS SNS notification if the job completes
 # 
-# What it doesn't do: Include every file name in the body of the email, even though it will transfer and move every file in the nominated folder.
+# What it doesn't do: Include every file name in the body of the email, even though it will transfer and move every file   
+# in the nominated folder.
 # If you need that, create an array and append all $transfer.FileNames
-# If you need SFTP, add "Protocol = [WinSCP.Protocol]::Sftp" and "SshHostKeyFingerprint = "ssh-rsa 2048 xx:xx......." to $SessionOptions, and delete "$Port = 21"
+# If you need SFTP, add "Protocol = [WinSCP.Protocol]::Sftp" and   
+# "SshHostKeyFingerprint = "ssh-rsa 2048 xx:xx......." to $SessionOptions, and delete "$Port = 21"
 
 
 Function SFTPTransfer {
